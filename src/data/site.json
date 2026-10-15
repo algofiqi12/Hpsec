@@ -1,0 +1,23 @@
+{
+  "nama": "HPSEC",
+  "domain": "https://hpsec.id",
+  "wa": "6281326511633",
+  "waTampil": "0813-2651-1633",
+  "alamat": {
+    "jalan": "Jl. Bumi Cikarang Makmur",
+    "kelurahan": "Sukadami",
+    "kecamatan": "Cikarang Selatan",
+    "kabupaten": "Kabupaten Bekasi",
+    "provinsi": "Jawa Barat 17530"
+  },
+  "jamBuka": "Setiap Hari 09.00 - 21.00 WIB",
+  "mapsUrl": "https://maps.app.goo.gl/x9Vq41rede3bh5yYA",
+  "mapsEmbed": "https://www.google.com/maps?q=-6.3557502,107.1079537&hl=id&z=17&output=embed",
+  "sosial": {
+    "instagram": "",
+    "tiktok": "",
+    "facebook": "",
+    "tokopedia": "",
+    "shopee": ""
+  }
+}

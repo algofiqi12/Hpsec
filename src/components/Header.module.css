@@ -1,0 +1,176 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.scrolled {
+  border-bottom-color: var(--border);
+  box-shadow: 0 2px 16px rgba(38, 31, 26, 0.06);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  letter-spacing: -0.03em;
+  z-index: 110;
+}
+
+.logo:hover {
+  color: var(--text);
+}
+
+.logoMark {
+  color: var(--primary);
+}
+
+.logoSec {
+  color: var(--text);
+}
+
+/* --- Desktop Nav --- */
+.nav {
+  display: none;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navLink {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--primary);
+  background: var(--surface);
+}
+
+.navWa {
+  display: none;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 110;
+}
+
+.waDesktop {
+  display: none;
+}
+
+.menuToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--text);
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+
+.menuToggle:hover {
+  background: var(--surface);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(38, 31, 26, 0.3);
+  z-index: 99;
+}
+
+/* --- Mobile Nav --- */
+@media (max-width: 767px) {
+  .navOpen {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100dvh;
+    background: var(--bg);
+    border-left: 2px solid var(--border);
+    padding: 5rem 1.5rem 2rem;
+    z-index: 105;
+    gap: 1rem;
+    animation: slideIn 0.3s var(--ease-out);
+  }
+
+  .navOpen .navList {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .navOpen .navLink {
+    font-size: 1.05rem;
+    padding: 0.75rem;
+    border-bottom: 1px dashed var(--border-light);
+  }
+
+  .navOpen .navWa {
+    display: inline-flex;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* --- Desktop --- */
+@media (min-width: 768px) {
+  .inner {
+    height: 72px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menuToggle {
+    display: none;
+  }
+
+  .waDesktop {
+    display: inline-flex;
+  }
+}

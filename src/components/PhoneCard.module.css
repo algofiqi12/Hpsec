@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.sold {
+  opacity: 0.75;
+}
+
+.sold:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.imgLink {
+  display: block;
+  text-decoration: none;
+}
+
+.nameLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nameLink:hover {
+  color: var(--primary);
+}

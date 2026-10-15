@@ -1,0 +1,248 @@
+.footer {
+  background: var(--text);
+  color: var(--bg);
+  padding: 2rem 0 0;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 3.5rem 0 0;
+    margin-top: var(--section-gap);
+  }
+}
+
+.inner {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 2.5rem;
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--bg);
+  display: inline-flex;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.35rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.logo:hover {
+  color: var(--bg);
+}
+
+.logoMark {
+  color: var(--mustard);
+}
+
+.logoSec {
+  color: var(--bg);
+}
+
+.tagline {
+  color: rgba(255, 248, 245, 0.7);
+  font-size: 0.82rem;
+  max-width: 280px;
+  margin-bottom: 0.5rem;
+  line-height: 1.45;
+}
+
+@media (min-width: 768px) {
+  .tagline {
+    font-size: 0.92rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+  }
+}
+
+.waBtn {
+  font-size: 0.82rem;
+  display: inline-flex;
+  width: fit-content;
+}
+
+@media (max-width: 639px) {
+  .waBtn {
+    display: none; /* Sudah ada floating WA button di pojok bawah */
+  }
+}
+
+.col {}
+
+.colTitle {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mustard);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px dashed rgba(255, 248, 245, 0.2);
+}
+
+@media (min-width: 768px) {
+  .colTitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.linkList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.35rem 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .linkList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.linkList a {
+  color: rgba(255, 248, 245, 0.8);
+  font-size: 0.82rem;
+  transition: color var(--transition);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .linkList a {
+    font-size: 0.9rem;
+  }
+}
+
+.linkList a:hover {
+  color: var(--mustard);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+@media (min-width: 768px) {
+  .contactList {
+    gap: 0.65rem;
+  }
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  color: rgba(255, 248, 245, 0.8);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .contactList li {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+}
+
+.contactList li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  opacity: 0.7;
+}
+
+.contactList a {
+  color: rgba(255, 248, 245, 0.8);
+  text-decoration: none;
+}
+
+.contactList a:hover {
+  color: var(--mustard);
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.65rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .socials {
+    margin-top: 1.25rem;
+  }
+}
+
+.socials a {
+  color: rgba(255, 248, 245, 0.6);
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color var(--transition);
+}
+
+.socials a:hover {
+  color: var(--mustard);
+}
+
+.bottom {
+  margin-top: 1.25rem;
+  padding: 0.85rem 0 1.5rem;
+  border-top: 1px solid rgba(255, 248, 245, 0.12);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bottom {
+    margin-top: 2.5rem;
+    padding: 1.25rem 0;
+  }
+}
+
+.bottom p {
+  color: rgba(255, 248, 245, 0.45);
+  font-size: 0.75rem;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bottom p {
+    font-size: 0.8rem;
+  }
+}

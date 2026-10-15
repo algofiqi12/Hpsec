@@ -1,0 +1,140 @@
+.headerSection {
+  padding: 3rem 0 1rem;
+  background: var(--bg-warm);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .contentGrid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+.story {}
+
+.storyTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.story p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.commitCard {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.25rem;
+  position: relative;
+  box-shadow: 3px 3px 0 var(--border);
+}
+
+@media (min-width: 640px) {
+  .commitCard {
+    padding: 2rem;
+    box-shadow: var(--shadow-hard);
+  }
+}
+
+.commitStamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  border: 3px double var(--primary);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  transform: rotate(-10deg);
+  opacity: 0.75;
+  margin-bottom: 1rem;
+}
+
+.commitTitle {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.commitList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.commitList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.commitList li svg {
+  flex-shrink: 0;
+  color: var(--olive);
+}
+
+/* Photo */
+.photoSection {
+  text-align: center;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  max-width: 640px;
+  height: 300px;
+  margin: 0 auto;
+  background: var(--surface-2);
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.photoCaption {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* CTA */
+.ctaBlock {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ctaBlock h2 {
+  font-size: 1.5rem;
+}
+
+.ctaBlock p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}

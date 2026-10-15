@@ -1,0 +1,221 @@
+/* Breadcrumb */
+.breadcrumb {
+  padding: 1rem 0;
+  background: var(--bg-warm);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.breadcrumbList li:not(:last-child)::after {
+  content: '/';
+  margin-left: 0.5rem;
+  color: var(--border-light);
+}
+
+.breadcrumbList a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  color: var(--primary);
+}
+
+.breadcrumbList li[aria-current] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Detail Grid */
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .detailGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+/* Image Section */
+.imageSection {}
+
+.mainImage {
+  position: relative;
+  aspect-ratio: 1;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-hard);
+}
+
+.mainImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageBadge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+.gallery {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.thumb:hover {
+  border-color: var(--primary);
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info Section */
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.phoneName {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.15;
+}
+
+.specsLine {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.specTag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--surface-2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  border: 1px solid var(--border-light);
+}
+
+.priceBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Detail Nota */
+.detailNota {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  background: var(--surface);
+}
+
+.notaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--border-light);
+  gap: 1rem;
+}
+
+.notaRow:last-child {
+  border-bottom: none;
+}
+
+.notaLabel {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+
+.notaValue {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.notaValue svg {
+  color: var(--olive);
+}
+
+/* Description */
+.descBlock {
+  background: var(--mustard-light);
+  border: 1.5px dashed var(--mustard);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+}
+
+.descBlock h3 {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mustard);
+  margin-bottom: 0.4rem;
+}
+
+.descBlock p {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* CTA */
+.ctaBlock {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .ctaBlock a,
+  .ctaBlock button {
+    width: 100%;
+    justify-content: center;
+  }
+}
